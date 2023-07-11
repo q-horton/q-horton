@@ -20,3 +20,7 @@ vim.opt.cursorline	= true
 vim.opt.backspace	= "indent,eol,start"
 vim.opt.scrolloff	= 8
 vim.opt.omnifunc	= "syntaxcomplete#Complete"
+
+-- EXTERNAL FILES
+require("core.plugins")
+require("core.plugin-config")
