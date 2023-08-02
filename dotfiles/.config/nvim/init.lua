@@ -5,6 +5,7 @@ vim.cmd("colorscheme codedark")
 -- HIGHLIGHTING AND SYNTAX
 vim.opt.syntax		= "on"
 vim.opt.showmatch	= true
+vim.opt.colorcolumn	= "80"
 -- INDENTATION
 vim.opt.tabstop		= 8
 vim.opt.softtabstop	= 4

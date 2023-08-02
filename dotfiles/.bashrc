@@ -52,3 +52,19 @@ cpp() {
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+export SOURCELIB_ROOT=/mnt/c/csse3010/sourcelib
+export PATH=$SOURCELIB_ROOT/tools:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=/opt/SEGGER/JLink:$PATH
+export SOURCELIB_ROOT=/mnt/c/csse3010/sourcelib
+export PATH=$SOURCELIB_ROOT/tools:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=/opt/SEGGER/JLink:$PATH
+export SOURCELIB_ROOT=/mnt/c/csse3010/sourcelib
+export PATH=$SOURCELIB_ROOT/tools:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=/opt/SEGGER/JLink:$PATH
+export SOURCELIB_ROOT=$HOME/csse3010/sourcelib
+export PATH=$SOURCELIB_ROOT/tools:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=/opt/SEGGER/JLink:$PATH
