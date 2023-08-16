@@ -13,10 +13,13 @@
 
 # General aliases
 alias lsf='ls -ali --si'
-alias uq='ssh moss'
+alias uq='ssh s4697591@moss.labs.eait.uq.edu.au'
 alias vi='nvim'
 alias vim='nvim'
 alias tu='sudo ntpdate time.windows.com'
+alias py='python3'
+alias python='python3'
+alias 3010debug='screen /dev/ttyACM0 115200'
 
 # Customised bash prompt
 PS1="\n\e[1;35m[\[\T\]]\e[0m \[\u\]@\[\H\]> \e[0;36m\[\W\]\e[0m\$ "
@@ -49,21 +52,11 @@ cpp() {
 		}
 	END { print "" }' total_size=$(stat -c '%s' "${1}") count=0
 }
+/usr/bin/keychain $HOME/.ssh/moss_rsa
+/usr/bin/keychain $HOME/.ssh/github_rsa
+/usr/bin/keychain $HOME/.ssh/gitea_rsa
+source $HOME/.keychain/$HOSTNAME-sh
 
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-export SOURCELIB_ROOT=/mnt/c/csse3010/sourcelib
-export PATH=$SOURCELIB_ROOT/tools:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=/opt/SEGGER/JLink:$PATH
-export SOURCELIB_ROOT=/mnt/c/csse3010/sourcelib
-export PATH=$SOURCELIB_ROOT/tools:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=/opt/SEGGER/JLink:$PATH
-export SOURCELIB_ROOT=/mnt/c/csse3010/sourcelib
-export PATH=$SOURCELIB_ROOT/tools:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=/opt/SEGGER/JLink:$PATH
 export SOURCELIB_ROOT=$HOME/csse3010/sourcelib
 export PATH=$SOURCELIB_ROOT/tools:$PATH
 export PATH=$HOME/.local/bin:$PATH

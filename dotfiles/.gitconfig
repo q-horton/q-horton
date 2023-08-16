@@ -1,3 +1,5 @@
+[core]
+	editor = nvim
 [user]
 	name = q-horton
 	email = 106427075+q-horton@users.noreply.github.com
