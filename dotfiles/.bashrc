@@ -19,7 +19,7 @@ alias vim='nvim'
 alias tu='sudo ntpdate time.windows.com'
 
 # Customised bash prompt
-PS1="\n\e[1;35m[\T]\e[0m \u@\H> \e[0;36m\W\e[0m\$ "
+PS1="\n\e[1;35m[\[\T\]]\e[0m \[\u\]@\[\H\]> \e[0;36m\[\W\]\e[0m\$ "
 
 # Colourful man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'
