@@ -52,12 +52,35 @@ cpp() {
 		}
 	END { print "" }' total_size=$(stat -c '%s' "${1}") count=0
 }
-/usr/bin/keychain $HOME/.ssh/moss_rsa
-/usr/bin/keychain $HOME/.ssh/github_rsa
-/usr/bin/keychain $HOME/.ssh/gitea_rsa
+
+# Loads SSH Keys into keychain
+KEY_FILES="$HOME/.ssh/moss_rsa"
+KEY_FILES+=" $HOME/.ssh/github_rsa"
+KEY_FILES+=" $HOME/.ssh/gitea_rsa"
+/usr/bin/keychain $KEY_FILES
 source $HOME/.keychain/$HOSTNAME-sh
 
+# JLink stuff for 3010
 export SOURCELIB_ROOT=$HOME/csse3010/sourcelib
 export PATH=$SOURCELIB_ROOT/tools:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=/opt/SEGGER/JLink:$PATH
+. "$HOME/.cargo/env"
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/quinn/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/quinn/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/quinn/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/quinn/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

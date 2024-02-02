@@ -20,29 +20,30 @@ return require('packer').startup(function(use)
 
     -- Status line at bottom of editor
     use 'nvim-lualine/lualine.nvim'
-    
+
     -- LSP installer
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
     -- General LSP
     use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/nvim-cmp' 
+    use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-nvim-lua'
     use 'hrsh7th/cmp-nvim-lsp-signature-help'
-    use 'hrsh7th/cmp-vsnip'                             
-    use 'hrsh7th/cmp-path'                              
-    use 'hrsh7th/cmp-buffer'                            
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/vim-vsnip'
 
     -- LSP Languages
     use 'simrat39/rust-tools.nvim'
-    
+
     -- Treesitter for more complex highlighting
     use 'nvim-treesitter/nvim-treesitter'
-    
+
     -- Misc niceties
     use 'windwp/nvim-autopairs'
+    use 'lukas-reineke/indent-blankline.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
