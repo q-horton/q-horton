@@ -1,8 +1,0 @@
-require('core.plugin-config.lualine')
-require('core.plugin-config.nvim-tree')
-require('core.plugin-config.mason')
-require('core.plugin-config.nvim-lspconfig')
-require('core.plugin-config.rust-tools')
-require('core.plugin-config.nvim-cmp')
-require('core.plugin-config.nvim-treesitter')
-require('core.plugin-config.nvim-autopairs')
